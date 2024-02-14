@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="Taskapp.js"></script>
+</head>
+<body ng-app = "Myapp" >
+    <div ng-controller="TaskappController">
+        <h2>Enter your marks:</h2>
+        SubjectA: <input type="number" min="0" max="100" ng-model="SubjectA"> 
+        SubjectB: <input type="number" min="0" max="100" ng-model="SubjectB">
+        <button ng-click="Add()">Total</button>
+        <br>
+        <p><b>Total:</b> <span ng-bind="Total"></span></p>
+        <p><b>Average:</b> <span ng-bind="Average"></span></p>
+        <!-- <p>Total: {{Total}}</p> -->
+    </div>
+
+</body>
+</html> 
